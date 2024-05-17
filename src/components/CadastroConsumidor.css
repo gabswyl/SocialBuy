@@ -1,0 +1,90 @@
+.infos-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.infos-container label {
+    font-weight: bold;
+}
+
+.infos-container b {
+    color: var(--azul);
+}
+
+.infos-container input, select {
+    padding: 10px;
+    border-radius: 8px;
+    border: 2px solid #747474;
+}
+
+.info-dados {
+    background-color: var(--branco);
+    padding: 20px;
+    width: 357px;
+    border-radius: 20px;
+}
+
+.info-name {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.iconuser {
+    background-color: var(--azul);
+    text-align: center;
+    width: 16px;
+    height: 16px;
+    border-radius: 20px;
+}
+.info-genero {
+    margin-top: 10px;
+}
+.info-genrecheckbox {
+    padding: 10px;
+    border: 2px solid #747474;
+    border-radius: 8px;
+}
+
+.info-genrecheckbox label {
+    margin-left: 5px;
+}
+.info-dadospessoais {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.info-dadosensiveis, .info-genero, .info-local  {
+    display: flex;
+    gap: 10px;
+}
+
+
+.info-dadosacesso {
+    display: flex;
+    gap: 10px;
+}
+
+.termos {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+.termos-check span {
+   margin-left: 5px;
+}
+
+.infos-container button {
+    background-color: var(--verde);
+    padding: 10px;
+    border-radius: 10px;
+    color: var(--branco);
+    text-transform: uppercase;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}

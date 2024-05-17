@@ -1,0 +1,12 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Inria Sans", sans-serif;
+  }
+  
+  :root {
+    --branco: #fff;
+    --rosa: #E70066;
+    --azul: #2E45BA;
+    --verde: #178A37;
+  }
