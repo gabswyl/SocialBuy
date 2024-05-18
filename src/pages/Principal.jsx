@@ -1,11 +1,14 @@
 import React from 'react'
+import Header from '../components/Header'
+import Filtrar from '../components/Filtrar'
 
 const Principal = () => {
-  return (
-    <header>
-        <h1>OIIII</h1>
-    </header>
-  )
+    return (
+        <>
+            <Header />
+            <Filtrar />
+        </>
+    )
 }
 
 export default Principal
