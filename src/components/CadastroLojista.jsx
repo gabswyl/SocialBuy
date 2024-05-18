@@ -113,8 +113,7 @@ display: flex;
 justify-content: center;
 `
 
-const CadastroConsumidor = () => {
-
+const CadastroLojista = () => {
     const [openingModal, setOpeningModal] = useState(false);
     const [openingModalError, setOpeningModalError] = useState(false);
     const [estados, setEstados] = useState([]);
@@ -224,7 +223,8 @@ const CadastroConsumidor = () => {
             !termosUso
         ) {
             setOpeningModalError(true);
-        } else {
+        }
+        else {
             setOpeningModal(true);
         }
     };
@@ -313,6 +313,10 @@ const CadastroConsumidor = () => {
                     </InfoName>
 
 
+                    <div style={{ display: "flex", flexDirection: "column" }}>
+                        <LabelStyled>Nome da empresa</LabelStyled>
+                        <InputStyed onChange={handleEmailChange} type='text' placeholder='Digite o nome da empresa' />
+                    </div>
                     <DadosAcesso>
                         <div>
                             <LabelStyled>E-mail</LabelStyled>
@@ -350,7 +354,7 @@ const CadastroConsumidor = () => {
                     </Termos>
 
                     <DivButton>
-                    <Cadastro onClick={handleSubmit}>Cadastrar</Cadastro>
+                        <Cadastro onClick={handleSubmit}>Cadastrar</Cadastro>
                     </DivButton>
                 </FormDados>
 
@@ -362,11 +366,11 @@ const CadastroConsumidor = () => {
                 titleError={"Formulário Inválido!"}
                 motivoError={"Por favor, preencha todos os dados necessários para prosseguir."}
                 isError={openingModalError}
-                isOpen={openingModal}
+                isLojista={openingModal}
                 onClose={handleCloseErrorModal}
-                href={"/"} />
+            />
         </>
     )
 }
 
-export default CadastroConsumidor
+export default CadastroLojista

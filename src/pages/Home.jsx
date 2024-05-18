@@ -21,7 +21,7 @@ const Title = styled.h1`
 color: #fff;
     font-size: 64px;
     text-align: center;
-    margin-top: 60px;
+    padding-top: 60px;
     margin-bottom: 60px;
 `
 
@@ -32,6 +32,7 @@ const ContainerLogin = styled.div`
   height: 470px;
   border-radius: 20px;
   padding: 30px;
+  width: 100%;
 `
 
 const Home = () => {
@@ -39,12 +40,10 @@ const Home = () => {
     <Section>
     <Title>Bem vindo (a) ao <br /> SocialBuy</Title>
     <Container>
-      <ContainerLogin class="container-login">
+      <ContainerLogin>
         <LoginUser />
       </ContainerLogin>
     </Container>
-
-      <Footer />
   </Section>
   )
 }
