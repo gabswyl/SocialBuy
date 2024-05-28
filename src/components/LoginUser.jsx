@@ -88,6 +88,76 @@ padding: 10px;
 background-color: var(--rosa);
 `;
 
+
+const profiles = [{
+    id: "1",
+    avatar: "",
+    nome: "Persona_Geek", 
+    produtos: {
+        camisetas: {
+            estoques: 6,
+            nomes: [{
+                nome: "Tanjiro Kimetsu no Yaiba",
+                preco: 27.99, 
+                qntd: 2,
+                imgproduct: ""
+            }, {
+                nome: "Adidas Haikyuu",
+                preco: 12.24, 
+                qntd: 1,
+                imgproduct: ""
+            }, 
+            {
+                nome: "Dragon Ball Z",
+                preco: 12.24, 
+                qntd: 3,
+                imgproduct: ""
+            }]
+        },
+        figures: {
+            estoques: 1, 
+            nomes: [{
+                nome: "Nezuko Kimetsu no Yaiba",
+                preco: 297.97, 
+                qntd: 1,
+                imgproduct: ""
+            }]
+        }
+    }
+}, {
+    id: "1",
+    avatar: "",
+    nome: "Bankai Shop", 
+    produtos: {
+        shorts: {
+            estoques: 3,
+            nomes: [{
+                nome: "Berserk",
+                preco: 21.99, 
+                qntd: 1,
+                imgproduct: ""
+            }, {
+                nome: "Spider man Verse",
+                preco: 7.99, 
+                qntd: 2,
+                imgproduct: ""
+            }, 
+        ]
+        },
+        colar: {
+            estoques: 1, 
+            nomes: [{
+                nome: "Pentagrama Colar",
+                preco: 16.97, 
+                qntd: 1,
+                imgproduct: ""
+            }]
+        }
+    }
+}
+
+]
+
 const LoginUser = () => {
 
 

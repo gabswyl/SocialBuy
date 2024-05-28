@@ -11,12 +11,12 @@ import './index.css';
 function App() {
   return (
     <BrowserRouter>
-      <AppRoutes />
+      <AppContent />
     </BrowserRouter>
   );
 }
 
-function AppRoutes() {
+function AppContent() {
   const location = useLocation();
 
   const backgroundClass = location.pathname === '/' || location.pathname.startsWith('/cadastro') ? 'body-bg' : '';
@@ -25,11 +25,11 @@ function AppRoutes() {
     <div className={backgroundClass}>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="cadastro" element={<Cadastro />} />
-        <Route path="cadastroconsumidor" element={<CadastroConsumidor />} />
-        <Route path="cadastrolojista" element={<CadastroLojista />} />
-        <Route path="dadoslojista" element={<DadosLojista />} />
-        <Route path="principal" element={<Principal />} />
+        <Route path="/cadastro" element={<Cadastro />} />
+        <Route path="/cadastroconsumidor" element={<CadastroConsumidor />} />
+        <Route path="/cadastrolojista" element={<CadastroLojista />} />
+        <Route path="/dadoslojista" element={<DadosLojista />} />
+        <Route path="/principal" element={<Principal />} />
       </Routes>
     </div>
   );

@@ -1,6 +1,7 @@
 import React, { useRef, useState } from 'react';
 import styled from 'styled-components';
 import Modal from './Modal';
+import '../index.css'
 
 const SectionContainer = styled.section`
   display: flex;
@@ -162,7 +163,7 @@ const handleChangeModalBanido = () => {
 
   return (
     <>
-      <SectionContainer>
+      <SectionContainer className='body-bg'>
         <DivDados ref={allInputs}>
           <Title>
             <img alt="icon" />
